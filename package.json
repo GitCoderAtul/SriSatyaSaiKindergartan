@@ -1,0 +1,15 @@
+{
+  "name": "vclassroom",
+  "version": "1.0.0",
+  "description": "Landing Page ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": " node-sass sass/custom.scss css/custom.css -w"
+  },
+  "author": "Atul",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
