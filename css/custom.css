@@ -676,6 +676,13 @@ footer {
 .vFoot_about p {
   text-align: left !important; }
 
+.vFoot_about h5 {
+  color: #ef8c11;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  border-top: 1.5px solid #ef8c11;
+  padding-top: 10px; }
+
 ul.vFoot_module, ul.vFoot_contact {
   list-style-type: none;
   padding-left: 2px;
@@ -723,3 +730,94 @@ ul.vFoot_contact li:nth-child(4) a:hover {
 
 .footer p a:hover {
   color: #10a881; }
+
+.btn-event {
+  margin-bottom: 5px;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  background-color: #00ebd6;
+  box-shadow: 0 10px 20px 0 rgba(0, 220, 255, 0.3); }
+
+.btn-event:focus {
+  background-color: #ebb800; }
+
+.event {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dfdfdf; }
+  .event h4 {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    font-size: 1.8rem; }
+    .event h4:after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100px;
+      background-color: #ef8c11;
+      height: 3px; }
+  .event ul {
+    padding-left: 25px; }
+    .event ul li {
+      font-size: 1.6rem; }
+      .event ul li:nth-child(1) {
+        animation-name: blink;
+        animation-duration: 0.4s;
+        animation-iteration-count: infinite; }
+
+@keyframes blink {
+  from {
+    color: #ffe087; }
+  to {
+    color: #ef4f03; } }
+
+@media only screen and (max-width: 990px) {
+  header {
+    height: 92px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 5; }
+    header.headerup {
+      top: -147px; }
+    header .custom-navbar {
+      background-color: #fcfcfc;
+      padding: 0 15px;
+      box-shadow: 1px 4px 10px rgba(19, 19, 19, 0.23); }
+      header .custom-navbar div > .navbar-brand img {
+        width: 120px;
+        position: absolute;
+        top: 0;
+        padding: 10px;
+        background-color: #fcfcfc;
+        border-radius: 6px; }
+      header .custom-navbar div > .navbar-toggler {
+        height: 92px; }
+        header .custom-navbar div > .navbar-toggler:focus {
+          border: none;
+          outline: none; }
+      header .custom-navbar .custom-nav {
+        min-height: 92px; }
+        header .custom-navbar .custom-nav li a {
+          line-height: 30px;
+          font-size: 1.6rem;
+          padding: 1rem 2rem !important; }
+  .v-hightlight .v-highlightinfo ul li {
+    width: 33.33%; }
+  .v-contact ul {
+    width: 100%;
+    padding-left: 0; }
+    .v-contact ul li {
+      width: 100%; } }

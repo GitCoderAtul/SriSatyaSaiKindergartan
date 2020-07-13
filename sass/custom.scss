@@ -349,6 +349,9 @@ footer{padding: 20px 0 60px;
 .footer h4:after{content: ''; position: absolute; bottom: 0px; left: 0;    width: 100px; background-color:$color-orange-theme;height: 3px;}    
 .vFoot_about img{display: block; margin: 0 auto; width: 300px;	}
 .vFoot_about p{text-align: left !important;}
+.vFoot_about h5{color: $color-orange-theme;  font-size: 1.6rem; margin-bottom: 0;
+    border-top: 1.5px solid $color-orange-theme;
+    padding-top: 10px;}
 ul.vFoot_module ,ul.vFoot_contact {list-style-type: none; padding-left: 2px; display: flex;
     flex-wrap: wrap;}    
 ul.vFoot_module li {width: 50%;  font-size: 14px; padding: 5px 5px; color:white;}
@@ -362,3 +365,85 @@ ul.vFoot_contact li:nth-child(4) a:hover{color:#c91d94;}
 .footer p{ text-align: center; color: white;  }   
 .footer p a{color:white;} 
 .footer p a:hover{color:#10a881;}
+
+.btn-event{
+    margin-bottom: 5px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 1.4rem;
+    background-color: #00ebd6;
+    box-shadow: 0 10px 20px 0 rgba(0, 220, 255, 0.3);
+}
+.btn-event:focus{background-color:#ebb800}
+.event{@include article-size();
+    width: 100%;  display: block; margin: 0 auto;
+    border: 1px solid #dfdfdf;
+    h4{@include article-header((center),(10px 0) );font-size: 1.8rem;
+        &:after{
+            @include article-headerline(0);
+        } 
+    }
+    ul{padding-left: 25px;
+        li{font-size: 1.6rem;
+            &:nth-child(1){animation-name:blink ; animation-duration: 0.4s;   animation-iteration-count: infinite;}
+        }
+        
+    }    
+}
+@keyframes blink{
+    from{
+        color:#ffe087
+    }
+    to{
+        color:#ef4f03;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    header{  height: 92px;
+        position: fixed;
+        top: 0;
+        transition: top 0.2s ease-in-out;
+        width: 100%; z-index: 5;
+        &.headerup{top:-147px; }   
+        .custom-navbar
+            {background-color: $color-white; padding: 0 15px; box-shadow: 1px 4px 10px $color-box-shadow1; 
+             div >.navbar-brand img
+                {   width: 120px;  position: absolute; top: 0;   
+                    padding: 10px; background-color:$color-white; border-radius: 6px;
+                }  
+                div >.navbar-toggler{   height: 92px;
+                    &:focus{border: none; outline: none;}    
+                }
+             .custom-nav
+                {min-height: 92px; 
+                     
+                    li a
+                    { 
+                        line-height: 30px; font-size: 1.6rem; padding: 1rem 2rem !important;  
+                          
+                }
+            }
+    }
+     }
+    
+     .v-hightlight{ 
+         .v-highlightinfo{ 
+         ul{
+            li{
+                width: 33.33%;
+            }
+     
+        }
+     }
+    }
+    .v-contact{
+        ul{ width: 100% ;   padding-left: 0;
+            li{
+                 width:100%;   
+            }
+        }
+    }  
+}
